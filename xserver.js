@@ -16,10 +16,12 @@ app.use((req, res, next) => {
   next();
 });
 
-/* app.use(cors({
+app.use(
+  cors({
     origin: true,
-    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-})) */
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+  })
+);
 
 //INFO:TODO:INFO: database connection - https://youtu.be/_Q-i0LiRd0A?t=289
 const db = new sqlite.Database(

@@ -11,10 +11,12 @@ app.use((req, res, next) => {
   next();
 });
 
-/* app.use(cors({
+app.use(
+  cors({
     origin: true,
-    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-})) */
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+  })
+);
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));

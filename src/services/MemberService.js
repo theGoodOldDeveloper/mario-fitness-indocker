@@ -4,10 +4,10 @@ export class MemberService {
   //INFO - developer SQLite server
   //static serverURL = "http://127.0.0.1:5002";
   //INFO - production SQLite server
-  //static serverURL = 'http://mariofitness.fun:5002'
+  //static serverURL = "http://80.211.204.154:5002";
   //INFO - exhibition inDocker SQLite server
   //NOTE: http to https *** static serverURL = 'http://thegoodolddeveloper.com:5002'
-  static serverURL = "http://81.183.142.135:5002";
+  static serverURL = "http://80.211.204.154:5002";
 
   static getAllMembers() {
     let dataURL = `${this.serverURL}/users`;
