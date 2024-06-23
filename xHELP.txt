@@ -24,3 +24,14 @@ Find out more about deployment here:
   https://cra.link/deployment
 
 PS I:\react\mario-fitness>
+
+HACK: - npm install express dotenv cors
+Create new file: docker-compose.yml
+
+BUG: - start multiple services docers
+docker build . -t mariofitness/mario-fitness-indocker
+docker build . -t databases/mario-fitness-indocker-database                      s
+
+
+docker run -p 5001:5001 mariofitness/mario-fitness-indocker
+docker run -p 5002:5002 databases/mario-fitness-indocker-databases
