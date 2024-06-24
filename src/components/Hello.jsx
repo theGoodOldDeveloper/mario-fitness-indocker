@@ -133,7 +133,6 @@ const Hello = (props) => {
             alt="Márió Fitness"
             width="128"
             height="128"
-            onClick={() => localStorage.removeItem("isLogin")}
           ></img>
           <button
             className="btn btn-dark  ms-3"
@@ -356,7 +355,14 @@ const Hello = (props) => {
             />
           </div>
         </div>
-
+        <br />
+        <br />
+        <button
+          className="btn btn-danger"
+          onClick={() => localStorage.removeItem("isLogin")}
+        >
+          reset
+        </button>
         {/* <div>
                 <Link to={'/login'} className='btn btn-dark'>Jelentkezz be!</Link>
             </div> */}
